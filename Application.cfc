@@ -6,7 +6,7 @@ component {
 	this.enablecfoutputonly    = true;
 	this.showdebugoutput       = false;
 	this.sessionstorage        = "redis";
-    this.sessioncluster = true
+    
 	this.cache.connections["redis"] = {
         class: 'ortus.extension.cache.redis.RedisCache'
       , storage: true
