@@ -1,0 +1,12 @@
+{
+    "name": "server",
+    "profile": "development",
+    "debug": true,
+    "JVM": {
+        "args": [
+            "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=localhost:9999",
+            "-javaagent:/app/luceedebug.jar=jdwpHost=localhost,jdwpPort=9999,debugHost=0.0.0.0,debugPort=10000,jarPath=/app/luceedebug.jar"
+        
+        ]
+    }
+}

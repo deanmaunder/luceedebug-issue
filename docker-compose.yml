@@ -1,0 +1,12 @@
+services:
+  lucee:
+    image: ortussolutions/commandbox:jdk17-3.9.9
+    ports:
+      - 9001:8080
+      - 10000:10000
+    volumes:
+      - .:/app
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
